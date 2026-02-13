@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="num1">Número 1</string>
+    <string name="plano1">Introduce el primer número</string>
+    <string name="plano2">Introduce el segundo número</string>
+    <string name="num2">Número 2</string>
+    <string name="dividir">/</string>
+    <string name="sumar">+</string>
+    <string name="multiplicar">x</string>
+    <string name="resultado">Resultado:</string>
+    <string name="restar">-</string>
+    <string name="operacion">operacion</string>
+</resources>

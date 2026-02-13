@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mostrarResultado"
+        android:layout_width="101dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="438dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="271dp"
+        android:text="@string/resultado"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="584dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/plano1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="633dp"
+        android:text="@string/plano1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/plano2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="507dp"
+        android:text="@string/plano2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="457dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dividir"
+        android:layout_width="59dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="361dp"
+        android:text="@string/dividir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sumar"
+        android:layout_width="59dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="291dp"
+        android:layout_marginBottom="361dp"
+        android:text="@string/sumar"
+        app:iconSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/multiplicar"
+        android:layout_width="59dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="361dp"
+        android:text="@string/multiplicar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/restar"
+        android:layout_width="59dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="361dp"
+        android:text="@string/restar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

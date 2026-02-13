@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <Switch
+        android:id="@+id/swFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="fondo_amarillo"
+        android:checked="false"
+        android:showText="true"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnRandomYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nº Aleatorio" />
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="¿Este año es bisiesto?"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rgBisiesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rbSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SI" />
+
+        <RadioButton
+            android:id="@+id/rbNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="22dp">
+
+        <Button
+            android:id="@+id/btnComprobar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comprobar resultado" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
