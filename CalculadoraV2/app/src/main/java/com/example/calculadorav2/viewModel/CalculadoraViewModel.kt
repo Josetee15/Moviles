@@ -6,14 +6,16 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.calculadorav2.model.Datos
 import com.example.calculadorav2.model.CalculadoraModel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
 class CalculadoraViewModel : ViewModel() {
 
     private val modelo = CalculadoraModel()
 
-    private val _estadoObservable = MutableLiveData<Datos>(modelo.estadoActual)
-    val estadoObservable: LiveData<Datos> = _estadoObservable
+    private val _estadoObservable = MutableStateFlow<Datos>(modelo.estadoActual)
+    val estadoObservable: StateFlow<Datos> = _estadoObservable
 
     fun numero(n: Int) = viewModelScope.launch {
         _estadoObservable.value = modelo.pulsarNumero(n)

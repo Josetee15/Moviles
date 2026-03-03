@@ -8,8 +8,12 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import com.example.calculadorav2.databinding.ActivityMainBinding
 import com.example.calculadorav2.viewModel.CalculadoraViewModel
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,26 +33,36 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        viewModel.estadoObservable.observe(this) {
-            binding.resultado.text = it.numero
-            binding.operacion.text = it.acumulado
-            if (it.estado.isNotBlank()) {
-                Toast.makeText(this, it.estado, Toast.LENGTH_SHORT).show()
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED){
+                viewModel.estadoObservable.collect {
+                    binding.resultado.text = it.numero
+                    binding.operacion.text = it.acumulado
+
+                }
             }
         }
+
+//        viewModel.estadoObservable.observe(this) {
+//            binding.resultado.text = it.numero
+//            binding.operacion.text = it.acumulado
+//            if (it.estado.isNotBlank()) {
+//                Toast.makeText(this, it.estado, Toast.LENGTH_SHORT).show()
+//            }
+    //    }
     }
 
-    fun configNum(v: View) {
-        val n = (v as Button).text.toString().toInt()
-        viewModel.numero(n)
-    }
-
-    fun configSimb(v: View) {
-        val t = (v as Button).text.toString()
-        when (t) {
-            "Clear", "clear" -> viewModel.clear()
-            "=" -> viewModel.igual()
-            "+", "-", "*", "/" -> viewModel.operacion(t)
-        }
-    }
+//    fun configNum(v: View) {
+//        val n = (v as Button).text.toString().toInt()
+//        viewModel.numero(n)
+//    }
+//
+//    fun configSimb(v: View) {
+//        val t = (v as Button).text.toString()
+//        when (t) {
+//            "Clear", "clear" -> viewModel.clear()
+//            "=" -> viewModel.igual()
+//            "+", "-", "*", "/" -> viewModel.operacion(t)
+//        }
+//    }
 }
