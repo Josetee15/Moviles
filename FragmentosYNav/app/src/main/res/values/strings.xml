@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">UT5 Fragmentos</string>
+
+    <string name="titulo_inicio">Elije número</string>
+    <string name="tab_bisiesto">Bisiesto</string>
+    <string name="tab_divisible">Divisible</string>
+
+    <string name="generar_numero">Genera un número</string>
+    <string name="validar">Validar</string>
+    <string name="salir">Salir</string>
+
+    <string name="pregunta_bisiesto">¿Es bisiesto el número generado?</string>
+
+    <string name="si">Si</string>
+    <string name="no">No</string>
+
+    <string name="divisible_2">Divisible entre 2</string>
+    <string name="divisible_3">Divisible entre 3</string>
+    <string name="divisible_5">Divisible entre 5</string>
+    <string name="divisible_10">Divisible entre 10</string>
+    <string name="no_divisible_ninguno">No es divisible entre ninguno de los anteriores</string>
+
+    <string name="pendiente">Pendiente</string>
+    <string name="correcto">Correcto</string>
+    <string name="incorrecto">Incorrecto</string>
+
+    <string name="mensaje_genera_numero_primero">Primero tienes que generar un número</string>
+    <string name="mensaje_selecciona_respuesta">Selecciona una respuesta</string>
+</resources>

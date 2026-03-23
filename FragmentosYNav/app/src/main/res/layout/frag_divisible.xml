@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/divisible_2" />
+
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/divisible_3" />
+
+        <CheckBox
+            android:id="@+id/cb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/divisible_5" />
+
+        <CheckBox
+            android:id="@+id/cb10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/divisible_10" />
+
+        <CheckBox
+            android:id="@+id/cbNinguno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_divisible_ninguno" />
+
+        <Button
+            android:id="@+id/btnValidarDivisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/validar" />
+
+        <TextView
+            android:id="@+id/tvResultadoDivisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/pendiente"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
