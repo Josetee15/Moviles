@@ -50,12 +50,17 @@ class BisiestoFrag : Fragment() {
                 EstadoRespuesta.PENDIENTE -> {
                     binding.rgBisiesto.clearCheck()
                     binding.tvResultadoBisiesto.text = "Pendiente"
+                    binding.tvResultadoBisiesto.setTextColor(resources.getColor(android.R.color.holo_blue_dark, null))
                 }
                 EstadoRespuesta.CORRECTO -> {
                     binding.tvResultadoBisiesto.text = "Correcto!!!"
+                    binding.tvResultadoBisiesto.setTextColor(resources.getColor(android.R.color.holo_green_light, null))
+
                 }
                 EstadoRespuesta.INCORRECTO -> {
                     binding.tvResultadoBisiesto.text = "Incorrecto :("
+                    binding.tvResultadoBisiesto.setTextColor(resources.getColor(android.R.color.holo_red_light, null))
+
                 }
             }
         }

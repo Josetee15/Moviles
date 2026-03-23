@@ -50,12 +50,18 @@ class DivisibleFrag : Fragment() {
                     binding.cb10.isChecked = false
                     binding.cbNinguno.isChecked = false
                     binding.tvResultadoDivisible.text = "Pendiente"
+                    binding.tvResultadoDivisible.setTextColor(resources.getColor(android.R.color.holo_blue_dark, null))
+
                 }
                 EstadoRespuesta.CORRECTO -> {
                     binding.tvResultadoDivisible.text = "Correcto!!!"
+                    binding.tvResultadoDivisible.setTextColor(resources.getColor(android.R.color.holo_green_light, null))
+
                 }
                 EstadoRespuesta.INCORRECTO -> {
                     binding.tvResultadoDivisible.text = "Incorrecto :("
+                    binding.tvResultadoDivisible.setTextColor(resources.getColor(android.R.color.holo_red_light, null))
+
                 }
             }
         }
