@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="miColorPrim">#11A2E4</color>
+    <color name="miColorDist">#FF5722</color>
+</resources>

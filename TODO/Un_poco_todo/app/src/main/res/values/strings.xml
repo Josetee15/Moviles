@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="miDesplegable">
+        <item>Python</item>
+        <item>Java</item>
+        <item>Sql</item>
+    </string-array>
+
+</resources>
