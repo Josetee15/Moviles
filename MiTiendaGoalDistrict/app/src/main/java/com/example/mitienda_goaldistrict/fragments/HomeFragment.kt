@@ -28,7 +28,7 @@ class HomeFragment : Fragment() {
         // configuramos el webview para cargar la web dentro de la app
         binding.webViewTienda.webViewClient = WebViewClient()
 
-        // activamos javascript porque la web de la tienda puede necesitarlo para funcionar correctamente
+        // activamos js porque la web puede necesitarlo para funcionar correctamente
         binding.webViewTienda.settings.javaScriptEnabled = true
 
         // cargamos la web de la tienda desde el servidor local
